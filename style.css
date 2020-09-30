@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800&display=swap');
+:root {
+    --primaryColor: #2e3366;
+    --violet: #690b9a;
+    --pink: #af358c;
+    --blue: #2969ca;
+    --lightBlue: #22B8CF;
+    --cream: #f6d2d4;
+    --white: #fff;
+    --font: 16px;
+    --fontFamily: 'Raleway', sans-serif;
+    --transition: .4s ease-in-out;
+}
+/**********
+Basic styles
+**********/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--fontFamily);
+    font-size: var(--font);
+    line-height: 1.6;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 800;
+}
+h2 {
+    color: var(--violet);
+    letter-spacing: 2px;
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    transition: var(--transition) !important;
+}
+
+nav {
+    background: rgba(105, 11, 154, .5) !important;
+}
+.navbar-brand img {
+    width: 200px;
+    height: auto;
+}
+.nav-link {
+    color: var(--white) !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+header {
+    background-image: url(img/header.png);
+    height: 1200px;
+    background-position: center;
+    background-size: cover;
+}
+header .container .row {
+    height: 100vh;
+}
+.button {
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background: linear-gradient(var(to right,--violet),var(--blue)) !important;
+    color: var(--white);
+    margin-top: 80px !important;
+    text-decoration: none !important;
+}
+.button:hover {
+    background: linear-gradient(var(to left,--violet),var(--blue));
+    color: var(--white);
+}
+
+header .button {
+    border: 2px solid var(--white);
+    background: transparent;
+}
+header .button:hover {
+    background: var(--white);
+    color: var(--primaryColor);
+}
+header h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+}
+.divider {
+    background-image: url(img/divider.png);
+    height: 929px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.divider .lead {
+    position:absolute;
+    top: 500px;
+    font-size: 2rem;
+    transform: rotate(-10deg);
+}
+
+footer {
+    background-image: url(img/footer.png);
+    height: 265px;
+}
+footer img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+footer .row {
+    padding-top: 100px;
+}
+footer .col-md-3:last-child i {
+    font-size: 2rem;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+footer a {
+    
+    color: var(--cream);
+}
+footer a:hover {
+    color: var(--white);
+}
